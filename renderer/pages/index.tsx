@@ -24,6 +24,7 @@ const IndexPage = () => {
       <button onClick={onSayHiClick}>Say hi to electron</button>
       <p>
         <Link href="/about">About</Link>
+        <Link href="/timer">Timer</Link>
       </p>
     </Layout>
   )
