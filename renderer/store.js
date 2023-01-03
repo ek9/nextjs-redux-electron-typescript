@@ -91,7 +91,7 @@ export const loadingExampleDataFailure = () => {
 const persistConfig = {
   key: 'primary',
   storage: createElectronStorage(),
-  whitelist: ['exampleData'], // place to select which state you want to persist
+  whitelist: ['exampleData', 'count'], // place to select which state you want to persist
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
