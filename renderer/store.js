@@ -1,8 +1,9 @@
 import { useMemo } from 'react'
 import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { persistReducer } from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
+import { persistStore, persistReducer } from 'redux-persist'
+//import storage from 'redux-persist/lib/storage'
+import createElectronStorage from "redux-persist-electron-storage";
 
 let store
 
@@ -89,8 +90,8 @@ export const loadingExampleDataFailure = () => {
 
 const persistConfig = {
   key: 'primary',
-  storage,
-  whitelist: ['exampleData'], // place to select which state you want to persist
+  storage: createElectronStorage(),
+  whitelist: ['exampleData', 'count'], // place to select which state you want to persist
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
