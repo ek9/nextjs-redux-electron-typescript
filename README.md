@@ -1,29 +1,41 @@
-# Redux Persist example
+# Next.js Electron Redux TypeScript
 
-This example shows how to integrate Redux with the power of Redux Persist in Next.js.
+Develop an [Electron](https://electronjs.org) app using [Next.js][nextjs],
+[React][reactjs], [Redux][redux] and [Electron Store][electron-store].
 
-With the advantage of having a global state for your app using `redux`. You'll also require some of your state values to be available offline. There comes `redux-persist` using which you can persist your states in browser's local storage. While there are various ways of persisting your states which you can always find in there [documentation](https://github.com/rt2zz/redux-persist/blob/master/README.md). This is an example of how you can integrate `redux-persist` with redux along with Next.js's universal rendering approach.
+You will have an advantage of having a global state for your app using
+[react-redux][react-redux], while also having an ability to persist your state
+using [redux-persist][redux-persist] in [Electron Store][electron-store] or
+(optionally) local storage.
 
-## Deploy your own
+This template is a combination of 2 example templates from [next.js][nextjs]:
+- [with-electron-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-electron-typescript)
+- [with-redux-persist](https://github.com/vercel/next.js/tree/canary/examples/with-redux-persist)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-redux-persist)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux-persist&project-name=with-redux-persist&repository-name=with-redux-persist)
+## Features
+
+This is an example project for creating an [Electron][electron] app using:
+
+- [Next.js][nextjs]
+- [Redux][redux] with [React Redux][react-redux], [redux-persis][redux-persist]
+  and [Electron Store][electron-store] integrated.
+- TypeScript
 
 ## How to use
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-npx create-next-app --example with-redux-persist with-redux-persist-app
+npx create-next-app --example https://github.com/ek9/nextjs-electron-redux-typescript
 ```
 
 ```bash
-yarn create next-app --example with-redux-persist with-redux-persist-app
+yarn create next-app --example https://github.com/ek9/nextjs-electron-redux-typescript
 ```
 
 ```bash
-pnpm create next-app --example with-redux-persist with-redux-persist-app
+pnpm create next-app --example https://github.com/ek9/nextjs-electron-redux-typescript
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
