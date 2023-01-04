@@ -12,7 +12,6 @@ This template is a combination of 2 example templates from [next.js][nextjs]:
 - [with-electron-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-electron-typescript)
 - [with-redux-persist](https://github.com/vercel/next.js/tree/canary/examples/with-redux-persist)
 
-
 ## Features
 
 This is an example project for creating an [Electron][electron] app using:
@@ -49,3 +48,11 @@ The Redux Persist has been initialized in `store.js`. You can modify the `redux-
 The example under `components/data-list.js`, shows a simple component that fetches data after being mounted and then dispatches an action to populate the redux state `exampleData` with the fetched data. And in `store.js`, since we have included the `exampleData` state to be persisted, So once the redux state receives the persisted data from browser's local storage, it will be then updated to the global redux state. So if you open the app next time and there is no Internet connection or whatsoever condition, the app will load the persisted data and will render it on the screen.
 
 For simplicity and readability, Reducers, Actions, Redux Persist configuration, and Store creators are all in the same file: `store.js`
+
+[nextjs]: https://nextjs.org
+[reactjs]: https://reactjs.org
+[redux]: https://redux.js.org/
+[redux-persist]: https://github.com/rt2zz/redux-persist
+[react-redux]: https://react-redux.js.org/
+[electron-store]: https://github.com/sindresorhus/electron-store
+
