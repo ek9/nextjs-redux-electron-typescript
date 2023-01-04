@@ -55,4 +55,4 @@ For simplicity and readability, Reducers, Actions, Redux Persist configuration, 
 [redux-persist]: https://github.com/rt2zz/redux-persist
 [react-redux]: https://react-redux.js.org/
 [electron-store]: https://github.com/sindresorhus/electron-store
-
+[electron]: https://electronjs.org
